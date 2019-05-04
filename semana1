@@ -44,3 +44,8 @@ edit port1
 set ip 192.168.26.201 255.255.255.0
 set allowaccess ping https ssh http
 
+config system interface
+Unset mode or set mode static
+edit port1
+set ip 192.168.26.201 255.255.255.0
+set allowaccess ping https ssh http
