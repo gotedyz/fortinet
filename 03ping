@@ -1,0 +1,25 @@
+execute ping 8.8.8.8
+
+execute ping-options ?
+adaptive-ping     Adaptive ping <enable|disable>.
+data-size         Integer value to specify datagram size in bytes.
+df-bit            Set DF bit in IP header <yes | no>.
+interface         Auto | <outgoing interface>.
+interval          Integer value to specify seconds between two pings.
+pattern           Hex format of pattern, e.g. 00ffaabb.
+repeat-count      Integer value to specify how many times to repeat PING.
+reset             Reset settings.
+source            Auto | <source interface IP>.
+timeout           Integer value to specify timeout in seconds.
+tos               IP type-of-service option.
+ttl               Integer value to specify time-to-live.
+validate-reply    Validate reply data <yes | no>.
+view-settings     View the current settings for PING option.
+
+execute ping-options view-settings
+
+execute ping-options <IP-LOCAL>
+
+execute ping-options reset
+
+
