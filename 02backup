@@ -1,0 +1,8 @@
+#Exportar un backup al servidor FPT
+execute backup config ftp FTG <ip> <usuario> <password>
+
+#Restaurar un backup desde el servidor FTP
+execute restore config ftp FTG <ip> <usuario> <password>
+
+#Revisar el Uptime.
+get system performance status
