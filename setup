@@ -1,0 +1,11 @@
+#Mostrar informaciòn del dispositivo
+get system status
+
+#Apagar correctamente
+execute shutdown
+
+#Configuraciòn inicial
+System > settings
+  SystemTime= -5
+  Idle timeout= 480
+  Auto file system check= enable
