@@ -1,0 +1,5 @@
+# (f) Muestra el contexto donde se encuentra <port1>
+show | grep -f "port1"
+
+# (i) Muestra el contexto donde se encuentra <port1> en mayúsculas y minúsculas
+show | grep -i "port1"
