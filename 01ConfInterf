@@ -1,0 +1,30 @@
+ ________                            192.92.168.13.2  ________
+|   FG  |--------------------------------------------|   R   |
+|_______| 192.168.13.206                             |_______|
+
+
+#Configurando el puerto 1 en modo DHCP
+config system interface
+edit port1
+  set mode dhcp
+  set allowaccess ping https ssh http fgfm
+  end
+
+#Configurando el puerto 1 en modo STATIC
+config system interface
+edit port1
+  set mode static
+  set ip 192.168.3.206 255.255.255.0
+  set allowaccess ping https ssh http fgfm
+  end
+
+#Configurando gateway
+config router static
+  edit 1
+  set gateway 192.160.13.2
+  set device port1
+  set distance 15
+  show
+  show full-configuration
+  end
+
