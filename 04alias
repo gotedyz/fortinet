@@ -1,0 +1,7 @@
+#Configurando el comando <estado>
+config system alias
+  edit estado
+    set command "get system status"
+    end
+
+alias estado
